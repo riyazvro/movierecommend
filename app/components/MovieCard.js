@@ -9,7 +9,7 @@ const MovieCard = ({ movie }) => {
     const router = useRouter()
     const [imageError, setImageError] = useState(false)
     // Array of movie IDs to exclude
-    const excludedMovieIds = [715287, 993234, 1280461, 259872, 611251, 1470086, 226674, 460229,1127648]
+    const excludedMovieIds = [715287, 993234, 1280461, 259872, 611251, 1470086, 226674, 460229,1127648,1242011,1506456]
     
     // Check if movie is adult content
     if (movie.adult === true || movie.adult === "true") {
