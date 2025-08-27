@@ -41,14 +41,14 @@ export default function Page() {
   return (
     <ErrorBoundary>
       <div>
-        {isopen && <div className='md:w-[31.5%] max-md:w-[90%] max-md:mx-[5%] md:mx-[535px] flex rounded-3xl border px-4 relative gap-10 py-3'
+        {isopen && <div className='md:w-[31.5%] max-md:w-[90%] max-md:mx-[5%] md:mx-[34%] flex rounded-3xl border px-4 relative gap-10 py-3'
           
         >
-          <div className='flex max-md:gap-3 md:gap-16 cursor-pointer'
+          <div className='flex max-md:gap-3 md:gap-4 cursor-pointer'
           onClick={() => { router.push("/movieoftheday"); setisopen(!isopen) }}
           >
 
-            <div className="max-md:truncate max-md:w-[200px] text-gray-400">Check Out Today&apos;s Recommended Movie</div>
+            <div className="max-md:truncate max-md:w-[200px] text-gray-400 truncate">Check Out Today&apos;s Recommended Movie</div>
             <ArrowRight className='animate-ping duration-1000' />
           </div>
           <XIcon className='absolute top-3 right-5 cursor-pointer' onClick={() => { setisopen(!isopen) }} />

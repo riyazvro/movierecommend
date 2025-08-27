@@ -100,7 +100,7 @@ export default function Page() {
                 console.error('Error fetching user status:', error)
             }
         }
-
+        
         if (movieid) {
             fetchUserStatus()
         }

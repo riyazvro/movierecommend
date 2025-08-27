@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <>
       {!isAdmin && <nav className='md:mb-14 mb-10'>
-        <div className='fixed  backdrop-blur-2xl flex justify-between items-center  top-0 left-0 right-0 z-50 bg-transparent md:px-16 lg:px-10  mb-3 p-3 max-md:px-3'>
+        <div className='fixed  backdrop-blur-2xl flex justify-between items-center  top-0 left-0 right-0 z-50 bg-transparent md:px-6 lg:px-6  mb-3 p-3 max-md:px-3'>
           <Link href="/" onClick={() => setisOpen(false)}>
             <Image
               width={100}
@@ -66,7 +66,7 @@ const Navbar = () => {
                   value={search}
                   placeholder='Search Movies ...'
                   onChange={(E) => setsearch(E.target.value)}
-                  className=' max-md:top-16  md:right-[15.5%] px-4 md:w-[170px] max-md:left-[18px] rounded-xl h-10 w-[80%] backdrop-blur-2xl absolute top-6  border' />
+                  className=' max-md:top-16  md:right-[16.5%] px-4 md:w-[11.5%] max-md:left-[18px] rounded-xl h-10 w-[80%] backdrop-blur-2xl absolute top-6  border' />
               }
 
               <SearchIcon onClick={() => {
@@ -88,7 +88,7 @@ const Navbar = () => {
               user ? (
                 <div className="flex items-center gap-2">
                   <UserButton />
-                  <Link href="/favorites" className="flex items-center gap-1 px-3 py-2 bg-[#f84565] text-black rounded-lg hover:bg-[#f84565]/80">
+                  <Link href="/favorites" className="flex items-center gap-1 px-1 py-1 bg-[#f84565] text-black rounded-lg hover:bg-[#f84565]/80">
                     <ListTodoIcon className="w-4 h-4" />
                     <span className="hidden md:inline">Favorites</span>
                   </Link>

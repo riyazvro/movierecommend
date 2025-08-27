@@ -3,7 +3,6 @@ import { BookAudioIcon, FileAudio2Icon, FileAudioIcon, HeadphonesIcon, Languages
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
-import timeFormat from '../lib/timeFormat'
 
 const MovieCard = ({ movie }) => {
     const router = useRouter()
