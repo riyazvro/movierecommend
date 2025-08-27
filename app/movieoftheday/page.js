@@ -214,7 +214,7 @@ const Page = () => {
                         height={350}
                         width={250}
                         alt={`${show?.title || "Movie Poster"}`}
-                        className='rounded-2xl border mt-5 w-[250px] h-[350px] border-s border-[#f84565] shadow-xl shadow-white'
+                        className='rounded-2xl border mt-5 w-[250px] h-[350px] mb-6 border-s border-[#f84565] shadow-xl shadow-white'
                         unoptimized
                     />
                     <div>

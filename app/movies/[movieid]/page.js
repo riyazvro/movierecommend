@@ -249,7 +249,7 @@ export default function Page() {
                             height={350}
                             width={250}
                             alt={`${show.title} poster`}
-                            className='rounded-2xl border mt-5 w-[250px] h-[350px] border-s border-[#f84565] shadow-xl shadow-white'
+                            className='rounded-2xl border mt-5 w-[250px] mb-6 h-[350px] border-s border-[#f84565] shadow-xl shadow-white'
                         />
                         <div>
 
