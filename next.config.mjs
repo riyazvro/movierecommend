@@ -2,7 +2,7 @@
 const nextConfig = {
   images: {
     remotePatterns: [
-      { protocol: 'https', hostname: 'image.tmdb.org',pathname: '/t/p/**' },
+      { protocol: 'https', hostname: 'image.tmdb.org', pathname: '/t/p/**' },
       { protocol: 'https', hostname: 'img.youtube.com' },
     ],
     formats: ['image/webp', 'image/avif'],
@@ -13,6 +13,7 @@ const nextConfig = {
   },
   experimental: {
     optimizePackageImports: ['lucide-react'],
+    lightningCss: false, // Added to fix Vercel build error
   },
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
