@@ -1,0 +1,14 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/api/fetchmovies/route": "/api/fetchmovies",
+  "/api/iswatchlater/route": "/api/iswatchlater",
+  "/api/movieoftheday/route": "/api/movieoftheday",
+  "/api/watchlater/route": "/api/watchlater",
+  "/api/favorite/route": "/api/favorite",
+  "/api/isfavorite/route": "/api/isfavorite",
+  "/page": "/",
+  "/favorites/page": "/favorites",
+  "/watchlater/page": "/watchlater",
+  "/movies/[movieid]/page": "/movies/[movieid]",
+  "/movieoftheday/page": "/movieoftheday"
+}

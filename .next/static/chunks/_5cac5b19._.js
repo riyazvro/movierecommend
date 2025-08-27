@@ -1,0 +1,1454 @@
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push([typeof document === "object" ? document.currentScript : undefined, {
+
+"[project]/app/components/BlurCircle.js [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "default": ()=>__TURBOPACK__default__export__
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+;
+const BlurCircle = (param)=>{
+    let { top = "auto", left = "auto", right = "auto", bottom = "auto" } = param;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "absolute -z-50 h-[230px] w-[230px] aspect-square rounded-full bg-[#f84565]/30 blur-[30px]",
+        style: {
+            top,
+            left,
+            right,
+            bottom
+        }
+    }, void 0, false, {
+        fileName: "[project]/app/components/BlurCircle.js",
+        lineNumber: 8,
+        columnNumber: 7
+    }, ("TURBOPACK compile-time value", void 0));
+};
+_c = BlurCircle;
+const __TURBOPACK__default__export__ = BlurCircle;
+var _c;
+__turbopack_context__.k.register(_c, "BlurCircle");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/app/lib/timeFormat.js [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "default": ()=>__TURBOPACK__default__export__
+});
+const timeFormat = (minutes)=>{
+    let hrs = Math.floor(minutes / 60);
+    let formattedmins = minutes % 60;
+    return " ".concat(hrs, "h ").concat(formattedmins, "m");
+};
+const __TURBOPACK__default__export__ = timeFormat;
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/app/components/metaForMovieid.js [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "default": ()=>__TURBOPACK__default__export__,
+    "metadata": ()=>metadata
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+;
+;
+let movie = "";
+const MetaForMovieid = (param)=>{
+    let { movie } = param;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {}, void 0, false, {
+        fileName: "[project]/app/components/metaForMovieid.js",
+        lineNumber: 5,
+        columnNumber: 5
+    }, ("TURBOPACK compile-time value", void 0));
+};
+_c = MetaForMovieid;
+const __TURBOPACK__default__export__ = MetaForMovieid;
+const metadata = {
+    title: "hello - Book Your Movie Tickets Online",
+    description: "Book movie tickets online with ease. Browse latest movies, check showtimes, and reserve your seats instantly."
+};
+var _c;
+__turbopack_context__.k.register(_c, "MetaForMovieid");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/app/movies/[movieid]/page.js [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "default": ()=>Page
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$BlurCircle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/BlurCircle.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2d$9$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock9Icon$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/clock-9.js [app-client] (ecmascript) <export default as Clock9Icon>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__HeartIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/heart.js [app-client] (ecmascript) <export default as HeartIcon>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__StarIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/star.js [app-client] (ecmascript) <export default as StarIcon>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$lib$2f$timeFormat$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/lib/timeFormat.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-hot-toast/dist/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$player$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-player/dist/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$metaForMovieid$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/metaForMovieid.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+;
+function Page() {
+    _s();
+    const { movieid } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useParams"])();
+    const [show, setshow] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [isfavorite, setisfavorite] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [watchLater, setwatchLater] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [director, setdirector] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
+    const [trailer, settrailer] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Page.useEffect": ()=>{
+            const fetchMovieData = {
+                "Page.useEffect.fetchMovieData": async ()=>{
+                    try {
+                        var _data_videos_results, _data_videos, _data_credits_crew, _data_credits;
+                        setLoading(true);
+                        const apiKey = ("TURBOPACK compile-time value", "23102388d04ea414040596bb8b634d15");
+                        if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+                        ;
+                        const res = await fetch("https://api.themoviedb.org/3/movie/".concat(movieid, "?api_key=").concat(apiKey, "&language=en-US&append_to_response=images,videos,credits,watch/providers&include_image_language=null,en"));
+                        const data = await res.json();
+                        if (!res.ok || (data === null || data === void 0 ? void 0 : data.success) === false) {
+                            throw new Error((data === null || data === void 0 ? void 0 : data.status_message) || 'Failed to load movie data');
+                        }
+                        setshow(data);
+                        // Find trailer
+                        if ((_data_videos = data.videos) === null || _data_videos === void 0 ? void 0 : (_data_videos_results = _data_videos.results) === null || _data_videos_results === void 0 ? void 0 : _data_videos_results.find({
+                            "Page.useEffect.fetchMovieData": (v)=>v.site === 'YouTube' && v.type === 'Trailer'
+                        }["Page.useEffect.fetchMovieData"])) {
+                            settrailer(data.videos.results.find({
+                                "Page.useEffect.fetchMovieData": (v)=>v.site === 'YouTube' && v.type === 'Trailer'
+                            }["Page.useEffect.fetchMovieData"]));
+                        } else {
+                            var _data_videos_results1, _data_videos1;
+                            settrailer(((_data_videos1 = data.videos) === null || _data_videos1 === void 0 ? void 0 : (_data_videos_results1 = _data_videos1.results) === null || _data_videos_results1 === void 0 ? void 0 : _data_videos_results1.find({
+                                "Page.useEffect.fetchMovieData": (v)=>v.site === 'YouTube' && v.type === 'Teaser'
+                            }["Page.useEffect.fetchMovieData"])) || null);
+                        }
+                        // Find director from crew data
+                        const directorData = (_data_credits = data.credits) === null || _data_credits === void 0 ? void 0 : (_data_credits_crew = _data_credits.crew) === null || _data_credits_crew === void 0 ? void 0 : _data_credits_crew.find({
+                            "Page.useEffect.fetchMovieData": (member)=>member.job === "Director"
+                        }["Page.useEffect.fetchMovieData"]);
+                        setdirector(directorData || null);
+                    } catch (error) {
+                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].error(error.message || 'Failed to load movie data');
+                        setshow(null);
+                        setdirector(null);
+                    } finally{
+                        setLoading(false);
+                    }
+                }
+            }["Page.useEffect.fetchMovieData"];
+            if (movieid) {
+                fetchMovieData();
+            }
+        }
+    }["Page.useEffect"], [
+        movieid
+    ]);
+    // Separate useEffect for user status to avoid blocking main data load
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Page.useEffect": ()=>{
+            const fetchUserStatus = {
+                "Page.useEffect.fetchUserStatus": async ()=>{
+                    try {
+                        // Fetch both statuses in parallel
+                        const [favoriteRes, watchLaterRes] = await Promise.all([
+                            fetch("/api/isfavorite", {
+                                method: "POST",
+                                headers: {
+                                    "Content-Type": "application/json"
+                                },
+                                body: JSON.stringify({
+                                    movieid
+                                })
+                            }),
+                            fetch("/api/iswatchlater", {
+                                method: "POST",
+                                headers: {
+                                    "Content-Type": "application/json"
+                                },
+                                body: JSON.stringify({
+                                    movieid
+                                })
+                            })
+                        ]);
+                        const [favoriteData, watchLaterData] = await Promise.all([
+                            favoriteRes.json(),
+                            watchLaterRes.json()
+                        ]);
+                        if (favoriteData.success) {
+                            setisfavorite(true);
+                        }
+                        if (watchLaterData.success) {
+                            setwatchLater(true);
+                        }
+                    } catch (error) {
+                        console.error('Error fetching user status:', error);
+                    }
+                }
+            }["Page.useEffect.fetchUserStatus"];
+            if (movieid) {
+                fetchUserStatus();
+            }
+        }
+    }["Page.useEffect"], [
+        movieid
+    ]);
+    const setWatchLater = async ()=>{
+        const myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+        const raw = JSON.stringify({
+            "movieid": show.id,
+            "poster_path": show.poster_path,
+            "title": show.title,
+            "release_date": show.release_date,
+            "original_language": show.original_language,
+            "vote_average": show.vote_average
+        });
+        const requestOptions = {
+            method: "POST",
+            headers: myHeaders,
+            body: raw,
+            redirect: "follow"
+        };
+        const res = await fetch("/api/watchlater", requestOptions);
+        const r = await res.json();
+        if (r.success) {
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].success(r.message);
+            setwatchLater(true);
+        }
+    };
+    const removeFromWatchLater = async ()=>{
+        const myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+        const raw = JSON.stringify({
+            "movieid": show.id
+        });
+        const requestOptions = {
+            method: "DELETE",
+            headers: myHeaders,
+            body: raw,
+            redirect: "follow"
+        };
+        const res = await fetch("/api/watchlater", requestOptions);
+        const r = await res.json();
+        if (r.success) {
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].success(r.message);
+            setwatchLater(false);
+        }
+    };
+    const addToFavorites = async ()=>{
+        const myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+        const raw = JSON.stringify({
+            "movieid": show.id,
+            "poster_path": show.poster_path,
+            "title": show.title,
+            "release_date": show.release_date,
+            "original_language": show.original_language,
+            "vote_average": show.vote_average
+        });
+        const requestOptions = {
+            method: "POST",
+            headers: myHeaders,
+            body: raw,
+            redirect: "follow"
+        };
+        const res = await fetch("/api/favorite", requestOptions);
+        const r = await res.json();
+        console.log(r.success);
+        if (r.success) {
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].success("Added to favorites");
+            setisfavorite((isfavorite)=>!isfavorite);
+        }
+    };
+    const removeFromFavorites = async ()=>{
+        const myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+        const raw = JSON.stringify({
+            "movieid": show.id
+        });
+        const requestOptions = {
+            method: "DELETE",
+            headers: myHeaders,
+            body: raw,
+            redirect: "follow"
+        };
+        const res = await fetch("/api/favorite", requestOptions);
+        const r = await res.json();
+        if (r.success) {
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].success("Removed from Favorites");
+            setisfavorite((isfavorite)=>!isfavorite);
+        }
+    };
+    if (loading) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "w-[80%] mx-auto md:mt-32 max-md:mt-16",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "text-center py-8",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "animate-spin rounded-full h-12 w-12 border-b-2 border-[#f84565] mx-auto mb-4"
+                    }, void 0, false, {
+                        fileName: "[project]/app/movies/[movieid]/page.js",
+                        lineNumber: 220,
+                        columnNumber: 21
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "text-gray-600",
+                        children: "Loading movie details..."
+                    }, void 0, false, {
+                        fileName: "[project]/app/movies/[movieid]/page.js",
+                        lineNumber: 221,
+                        columnNumber: 21
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/app/movies/[movieid]/page.js",
+                lineNumber: 219,
+                columnNumber: 17
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/app/movies/[movieid]/page.js",
+            lineNumber: 218,
+            columnNumber: 13
+        }, this);
+    }
+    if (!show) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "w-[80%] mx-auto md:mt-32 max-md:mt-16",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "text-center py-8",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                    className: "text-red-600",
+                    children: "The movie you are trying to search is not available"
+                }, void 0, false, {
+                    fileName: "[project]/app/movies/[movieid]/page.js",
+                    lineNumber: 231,
+                    columnNumber: 21
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/app/movies/[movieid]/page.js",
+                lineNumber: 230,
+                columnNumber: 17
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/app/movies/[movieid]/page.js",
+            lineNumber: 229,
+            columnNumber: 13
+        }, this);
+    }
+    if (show) {
+        var _show_watchproviders_results_CA_buy, _show_watchproviders_results_CA, _show_watchproviders_results, _show_watchproviders, _show_watchproviders_results_CA_buy1, _show_watchproviders_results_CA1, _show_watchproviders_results1, _show_watchproviders1, _show_images, _show_credits_cast, _show_credits;
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "w-[80%]  max-md:w-full max-md: max-md:ml-2 max-md:pr-2 mx-auto ",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Toaster"], {}, void 0, false, {
+                    fileName: "[project]/app/movies/[movieid]/page.js",
+                    lineNumber: 241,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$metaForMovieid$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    movie: show
+                }, void 0, false, {
+                    fileName: "[project]/app/movies/[movieid]/page.js",
+                    lineNumber: 242,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex flex-col  gap-5",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex max-md:flex-col max-md:justify-center max-md:items-center  md:gap-10",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    priority: true,
+                                    src: "https://image.tmdb.org/t/p/w500".concat(show.poster_path),
+                                    height: 350,
+                                    width: 250,
+                                    alt: "".concat(show.title, " poster"),
+                                    className: "rounded-2xl border mt-5 w-[250px] h-[350px] border-s border-[#f84565] shadow-xl shadow-white"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/movies/[movieid]/page.js",
+                                    lineNumber: 246,
+                                    columnNumber: 25
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                            className: "text-4xl font-bold pb-3 flex gap-5 items-center text-[#f84565] ",
+                                            children: [
+                                                show.title,
+                                                show.adult && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    src: '/-18.png',
+                                                    alt: "18",
+                                                    width: 40,
+                                                    height: 40
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/movies/[movieid]/page.js",
+                                                    lineNumber: 257,
+                                                    columnNumber: 48
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/movies/[movieid]/page.js",
+                                            lineNumber: 256,
+                                            columnNumber: 29
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                            className: "text-xl w-[600px] text-white/50 max-md:w-full",
+                                            children: show.overview
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/movies/[movieid]/page.js",
+                                            lineNumber: 259,
+                                            columnNumber: 29
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "text-[#f84565]  flex gap-4 py-2",
+                                            children: show.genres && show.genres.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                                className: "flex gap-4",
+                                                children: show.genres.map((genre)=>genre.name).join('   |   ')
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/movies/[movieid]/page.js",
+                                                lineNumber: 262,
+                                                columnNumber: 37
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/movies/[movieid]/page.js",
+                                            lineNumber: 260,
+                                            columnNumber: 29
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex gap-4",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                                    className: "text-xl",
+                                                    children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$lib$2f$timeFormat$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(show.runtime)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/movies/[movieid]/page.js",
+                                                    lineNumber: 268,
+                                                    columnNumber: 33
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                                    className: "text-xl",
+                                                    children: [
+                                                        "Year : ",
+                                                        show.release_date.split("-")[0]
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/movies/[movieid]/page.js",
+                                                    lineNumber: 269,
+                                                    columnNumber: 33
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex gap-2 items-center",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "bg-white rounded-full w-8 flex items-center justify-center",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__StarIcon$3e$__["StarIcon"], {
+                                                                width: 100,
+                                                                className: "fill-amber-600 "
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/movies/[movieid]/page.js",
+                                                                lineNumber: 272,
+                                                                columnNumber: 41
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/movies/[movieid]/page.js",
+                                                            lineNumber: 271,
+                                                            columnNumber: 37
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                                            children: show.vote_average.toFixed(1)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/movies/[movieid]/page.js",
+                                                            lineNumber: 274,
+                                                            columnNumber: 37
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/movies/[movieid]/page.js",
+                                                    lineNumber: 270,
+                                                    columnNumber: 33
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/movies/[movieid]/page.js",
+                                            lineNumber: 267,
+                                            columnNumber: 29
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    children: "A movie by -  "
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/movies/[movieid]/page.js",
+                                                    lineNumber: 278,
+                                                    columnNumber: 33
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-xl",
+                                                    children: (director === null || director === void 0 ? void 0 : director.name) || "Unknown Director"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/movies/[movieid]/page.js",
+                                                    lineNumber: 279,
+                                                    columnNumber: 33
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/movies/[movieid]/page.js",
+                                            lineNumber: 277,
+                                            columnNumber: 29
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex gap-5 items-center mt-5",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex gap-4 bg-[#212121] hover:scale-105 w-fit px-4 py-2 rounded-2xl cursor-pointer",
+                                                    onClick: ()=>{
+                                                        if (watchLater === false) {
+                                                            setWatchLater();
+                                                        } else {
+                                                            removeFromWatchLater();
+                                                        }
+                                                    },
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                                            children: "Watch Later"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/movies/[movieid]/page.js",
+                                                            lineNumber: 292,
+                                                            columnNumber: 37
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2d$9$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock9Icon$3e$__["Clock9Icon"], {
+                                                            className: watchLater ? "text-[#f84565]" : ""
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/movies/[movieid]/page.js",
+                                                            lineNumber: 293,
+                                                            columnNumber: 37
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/movies/[movieid]/page.js",
+                                                    lineNumber: 282,
+                                                    columnNumber: 33
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "rounded-full  p-1 cursor-pointer bg-[#212121] outline",
+                                                    onClick: ()=>{
+                                                        if (isfavorite === false) {
+                                                            addToFavorites();
+                                                        } else {
+                                                            removeFromFavorites();
+                                                        }
+                                                    },
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__HeartIcon$3e$__["HeartIcon"], {
+                                                        className: isfavorite ? "fill-[#f84565] text-[#f84565] " : ""
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/movies/[movieid]/page.js",
+                                                        lineNumber: 304,
+                                                        columnNumber: 37
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/movies/[movieid]/page.js",
+                                                    lineNumber: 295,
+                                                    columnNumber: 33
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/movies/[movieid]/page.js",
+                                            lineNumber: 281,
+                                            columnNumber: 29
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/movies/[movieid]/page.js",
+                                    lineNumber: 254,
+                                    columnNumber: 25
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/movies/[movieid]/page.js",
+                            lineNumber: 245,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                        className: "text-lg text-[#f84565] font-semibold mt-4 text-center",
+                                        children: "You can watch this movie on"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/movies/[movieid]/page.js",
+                                        lineNumber: 313,
+                                        columnNumber: 29
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/app/movies/[movieid]/page.js",
+                                    lineNumber: 312,
+                                    columnNumber: 25
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex gap-5 pt-5",
+                                    children: !((_show_watchproviders = show['watch/providers']) === null || _show_watchproviders === void 0 ? void 0 : (_show_watchproviders_results = _show_watchproviders.results) === null || _show_watchproviders_results === void 0 ? void 0 : (_show_watchproviders_results_CA = _show_watchproviders_results.CA) === null || _show_watchproviders_results_CA === void 0 ? void 0 : (_show_watchproviders_results_CA_buy = _show_watchproviders_results_CA.buy) === null || _show_watchproviders_results_CA_buy === void 0 ? void 0 : _show_watchproviders_results_CA_buy.length) > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "text-center text-gray-600",
+                                        children: "No Watch Providers Available for this Movie"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/movies/[movieid]/page.js",
+                                        lineNumber: 317,
+                                        columnNumber: 33
+                                    }, this) : (_show_watchproviders1 = show['watch/providers']) === null || _show_watchproviders1 === void 0 ? void 0 : (_show_watchproviders_results1 = _show_watchproviders1.results) === null || _show_watchproviders_results1 === void 0 ? void 0 : (_show_watchproviders_results_CA1 = _show_watchproviders_results1.CA) === null || _show_watchproviders_results_CA1 === void 0 ? void 0 : (_show_watchproviders_results_CA_buy1 = _show_watchproviders_results_CA1.buy) === null || _show_watchproviders_results_CA_buy1 === void 0 ? void 0 : _show_watchproviders_results_CA_buy1.slice(0, 6).map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex flex-col gap-3",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    src: item.logo_path ? "https://image.tmdb.org/t/p/w200".concat(item.logo_path) : "/no-image.png",
+                                                    width: 100,
+                                                    height: 100,
+                                                    alt: "provider",
+                                                    className: "rounded-2xl",
+                                                    loading: "lazy"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/movies/[movieid]/page.js",
+                                                    lineNumber: 321,
+                                                    columnNumber: 41
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                                    className: "text-center",
+                                                    children: item.provider_name
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/movies/[movieid]/page.js",
+                                                    lineNumber: 334,
+                                                    columnNumber: 41
+                                                }, this)
+                                            ]
+                                        }, item.logo_path, true, {
+                                            fileName: "[project]/app/movies/[movieid]/page.js",
+                                            lineNumber: 320,
+                                            columnNumber: 37
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "[project]/app/movies/[movieid]/page.js",
+                                    lineNumber: 315,
+                                    columnNumber: 25
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/movies/[movieid]/page.js",
+                            lineNumber: 311,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                    className: "text-lg font-semibold mb-4 text-[#f84565] text-center",
+                                    children: "Photos and Images from the Movie"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/movies/[movieid]/page.js",
+                                    lineNumber: 343,
+                                    columnNumber: 25
+                                }, this),
+                                ((_show_images = show.images) === null || _show_images === void 0 ? void 0 : _show_images.backdrops) && show.images.backdrops.length > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4",
+                                    children: show.images.backdrops.slice(0, 15).map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "relative group",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                src: item.file_path ? "https://image.tmdb.org/t/p/w500".concat(item.file_path) : "/no-image.png",
+                                                loading: "lazy",
+                                                width: 300,
+                                                height: 180,
+                                                alt: "".concat(show.title, " backdrop"),
+                                                className: "rounded object-cover w-full h-32"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/movies/[movieid]/page.js",
+                                                lineNumber: 348,
+                                                columnNumber: 41
+                                            }, this)
+                                        }, item.file_path, false, {
+                                            fileName: "[project]/app/movies/[movieid]/page.js",
+                                            lineNumber: 347,
+                                            columnNumber: 37
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "[project]/app/movies/[movieid]/page.js",
+                                    lineNumber: 345,
+                                    columnNumber: 29
+                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "text-center py-8 text-gray-500",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        children: "No images available for this movie"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/movies/[movieid]/page.js",
+                                        lineNumber: 365,
+                                        columnNumber: 33
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/app/movies/[movieid]/page.js",
+                                    lineNumber: 364,
+                                    columnNumber: 29
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/movies/[movieid]/page.js",
+                            lineNumber: 342,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                    className: "text-3xl font-semibold mb-4 text-[#f84565] text-center",
+                                    children: "Watch Trailer Here"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/movies/[movieid]/page.js",
+                                    lineNumber: 372,
+                                    columnNumber: 25
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    children: trailer && trailer.key ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "relative w-full pb-[56.25%]",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$player$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                            src: "https://www.youtube.com/watch?v=".concat(trailer.key),
+                                            controls: true,
+                                            width: "100%",
+                                            height: "100%",
+                                            className: "absolute top-0 left-0 w-full h-full",
+                                            playing: false,
+                                            muted: false,
+                                            loop: false,
+                                            config: {
+                                                youtube: {
+                                                    playerVars: {
+                                                        modestbranding: 1,
+                                                        controls: 1,
+                                                        rel: 0
+                                                    }
+                                                }
+                                            }
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/movies/[movieid]/page.js",
+                                            lineNumber: 376,
+                                            columnNumber: 37
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/movies/[movieid]/page.js",
+                                        lineNumber: 375,
+                                        columnNumber: 33
+                                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "text-center py-8 text-gray-500",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            children: "No trailer available for this movie"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/movies/[movieid]/page.js",
+                                            lineNumber: 398,
+                                            columnNumber: 37
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/movies/[movieid]/page.js",
+                                        lineNumber: 397,
+                                        columnNumber: 33
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/app/movies/[movieid]/page.js",
+                                    lineNumber: 373,
+                                    columnNumber: 25
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/movies/[movieid]/page.js",
+                            lineNumber: 371,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                    className: "text-lg font-semibold mb-2",
+                                    children: "CAST"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/movies/[movieid]/page.js",
+                                    lineNumber: 404,
+                                    columnNumber: 25
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex flex-wrap gap-4 max-md:gap-2",
+                                    children: (_show_credits = show.credits) === null || _show_credits === void 0 ? void 0 : (_show_credits_cast = _show_credits.cast) === null || _show_credits_cast === void 0 ? void 0 : _show_credits_cast.slice(0, 10).map((person)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex flex-col items-center w-24",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    src: person.profile_path ? "https://image.tmdb.org/t/p/w200".concat(person.profile_path) : "/no-image.png",
+                                                    loading: "lazy",
+                                                    alt: person.name,
+                                                    width: 100,
+                                                    height: 100,
+                                                    className: "rounded-2xl object-cover w-20 h-28 bg-gray-800"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/movies/[movieid]/page.js",
+                                                    lineNumber: 409,
+                                                    columnNumber: 37
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-xs text-white mt-1 text-center truncate w-full",
+                                                    children: person.name
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/movies/[movieid]/page.js",
+                                                    lineNumber: 421,
+                                                    columnNumber: 37
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-[10px] text-gray-400 text-center truncate w-full",
+                                                    children: person.character
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/movies/[movieid]/page.js",
+                                                    lineNumber: 422,
+                                                    columnNumber: 37
+                                                }, this)
+                                            ]
+                                        }, person.id, true, {
+                                            fileName: "[project]/app/movies/[movieid]/page.js",
+                                            lineNumber: 408,
+                                            columnNumber: 33
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "[project]/app/movies/[movieid]/page.js",
+                                    lineNumber: 405,
+                                    columnNumber: 25
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/movies/[movieid]/page.js",
+                            lineNumber: 403,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/app/movies/[movieid]/page.js",
+                    lineNumber: 243,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/app/movies/[movieid]/page.js",
+            lineNumber: 240,
+            columnNumber: 13
+        }, this);
+    }
+}
+_s(Page, "3ELxWt1yROAuL2BeUKDgR/CafQw=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useParams"]
+    ];
+});
+_c = Page;
+var _c;
+__turbopack_context__.k.register(_c, "Page");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/node_modules/lucide-react/dist/esm/icons/clock-9.js [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.536.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s({
+    "__iconNode": ()=>__iconNode,
+    "default": ()=>Clock9
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-client] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M12 6v6H8",
+            key: "u39vzm"
+        }
+    ],
+    [
+        "circle",
+        {
+            cx: "12",
+            cy: "12",
+            r: "10",
+            key: "1mglay"
+        }
+    ]
+];
+const Clock9 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("clock-9", __iconNode);
+;
+ //# sourceMappingURL=clock-9.js.map
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/clock-9.js [app-client] (ecmascript) <export default as Clock9Icon>": ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s({
+    "Clock9Icon": ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2d$9$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2d$9$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/clock-9.js [app-client] (ecmascript)");
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/heart.js [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.536.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s({
+    "__iconNode": ()=>__iconNode,
+    "default": ()=>Heart
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-client] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5",
+            key: "mvr1a0"
+        }
+    ]
+];
+const Heart = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("heart", __iconNode);
+;
+ //# sourceMappingURL=heart.js.map
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/heart.js [app-client] (ecmascript) <export default as HeartIcon>": ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s({
+    "HeartIcon": ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/heart.js [app-client] (ecmascript)");
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/star.js [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.536.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s({
+    "__iconNode": ()=>__iconNode,
+    "default": ()=>Star
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-client] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z",
+            key: "r04s7s"
+        }
+    ]
+];
+const Star = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("star", __iconNode);
+;
+ //# sourceMappingURL=star.js.map
+}),
+"[project]/node_modules/lucide-react/dist/esm/icons/star.js [app-client] (ecmascript) <export default as StarIcon>": ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s({
+    "StarIcon": ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/star.js [app-client] (ecmascript)");
+}),
+"[project]/node_modules/react-player/dist/patterns.js [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s({
+    "AUDIO_EXTENSIONS": ()=>AUDIO_EXTENSIONS,
+    "DASH_EXTENSIONS": ()=>DASH_EXTENSIONS,
+    "HLS_EXTENSIONS": ()=>HLS_EXTENSIONS,
+    "MATCH_URL_MUX": ()=>MATCH_URL_MUX,
+    "MATCH_URL_SPOTIFY": ()=>MATCH_URL_SPOTIFY,
+    "MATCH_URL_TIKTOK": ()=>MATCH_URL_TIKTOK,
+    "MATCH_URL_TWITCH": ()=>MATCH_URL_TWITCH,
+    "MATCH_URL_VIMEO": ()=>MATCH_URL_VIMEO,
+    "MATCH_URL_WISTIA": ()=>MATCH_URL_WISTIA,
+    "MATCH_URL_YOUTUBE": ()=>MATCH_URL_YOUTUBE,
+    "VIDEO_EXTENSIONS": ()=>VIDEO_EXTENSIONS,
+    "canPlay": ()=>canPlay
+});
+const AUDIO_EXTENSIONS = /\.(m4a|m4b|mp4a|mpga|mp2|mp2a|mp3|m2a|m3a|wav|weba|aac|oga|spx)($|\?)/i;
+const VIDEO_EXTENSIONS = /\.(mp4|og[gv]|webm|mov|m4v)(#t=[,\d+]+)?($|\?)/i;
+const HLS_EXTENSIONS = /\.(m3u8)($|\?)/i;
+const DASH_EXTENSIONS = /\.(mpd)($|\?)/i;
+const MATCH_URL_MUX = /stream\.mux\.com\/(?!\w+\.m3u8)(\w+)/;
+const MATCH_URL_YOUTUBE = /(?:youtu\.be\/|youtube(?:-nocookie|education)?\.com\/(?:embed\/|v\/|watch\/|watch\?v=|watch\?.+&v=|shorts\/|live\/))((\w|-){11})|youtube\.com\/playlist\?list=|youtube\.com\/user\//;
+const MATCH_URL_VIMEO = /vimeo\.com\/(?!progressive_redirect).+/;
+const MATCH_URL_WISTIA = /(?:wistia\.(?:com|net)|wi\.st)\/(?:medias|embed)\/(?:iframe\/)?([^?]+)/;
+const MATCH_URL_SPOTIFY = /open\.spotify\.com\/(\w+)\/(\w+)/i;
+const MATCH_URL_TWITCH = /(?:www\.|go\.)?twitch\.tv\/([a-zA-Z0-9_]+|(videos?\/|\?video=)\d+)($|\?)/;
+const MATCH_URL_TIKTOK = /tiktok\.com\/(?:@[^/]+\/video\/)?(\d+)(?:\/([\w-]+))?/;
+const canPlayFile = (url, test)=>{
+    if (Array.isArray(url)) {
+        for (const item of url){
+            if (typeof item === "string" && canPlayFile(item, test)) {
+                return true;
+            }
+            if (canPlayFile(item.src, test)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    return test(url);
+};
+const canPlay = {
+    html: (url)=>canPlayFile(url, (u)=>AUDIO_EXTENSIONS.test(u) || VIDEO_EXTENSIONS.test(u)),
+    hls: (url)=>canPlayFile(url, (u)=>HLS_EXTENSIONS.test(u)),
+    dash: (url)=>canPlayFile(url, (u)=>DASH_EXTENSIONS.test(u)),
+    mux: (url)=>MATCH_URL_MUX.test(url),
+    youtube: (url)=>MATCH_URL_YOUTUBE.test(url),
+    vimeo: (url)=>MATCH_URL_VIMEO.test(url) && !VIDEO_EXTENSIONS.test(url) && !HLS_EXTENSIONS.test(url),
+    wistia: (url)=>MATCH_URL_WISTIA.test(url),
+    spotify: (url)=>MATCH_URL_SPOTIFY.test(url),
+    twitch: (url)=>MATCH_URL_TWITCH.test(url),
+    tiktok: (url)=>MATCH_URL_TIKTOK.test(url)
+};
+;
+}),
+"[project]/node_modules/react-player/dist/HtmlPlayer.js [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s({
+    "default": ()=>HtmlPlayer_default
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$player$2f$dist$2f$patterns$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-player/dist/patterns.js [app-client] (ecmascript)");
+;
+;
+const HtmlPlayer = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].forwardRef((props, ref)=>{
+    const Media = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$player$2f$dist$2f$patterns$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AUDIO_EXTENSIONS"].test("".concat(props.src)) ? "audio" : "video";
+    return /* @__PURE__ */ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].createElement(Media, {
+        ...props,
+        ref
+    }, props.children);
+});
+var HtmlPlayer_default = HtmlPlayer;
+;
+}),
+"[project]/node_modules/react-player/dist/players.js [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s({
+    "default": ()=>players_default
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$player$2f$dist$2f$patterns$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-player/dist/patterns.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$player$2f$dist$2f$HtmlPlayer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-player/dist/HtmlPlayer.js [app-client] (ecmascript)");
+;
+;
+;
+const Players = [
+    {
+        key: "hls",
+        name: "hls.js",
+        canPlay: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$player$2f$dist$2f$patterns$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["canPlay"].hls,
+        canEnablePIP: ()=>true,
+        player: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["lazy"])(()=>__turbopack_context__.r("[project]/node_modules/hls-video-element/dist/react.js [app-client] (ecmascript, async loader)")(__turbopack_context__.i))
+    },
+    {
+        key: "dash",
+        name: "dash.js",
+        canPlay: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$player$2f$dist$2f$patterns$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["canPlay"].dash,
+        canEnablePIP: ()=>true,
+        player: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["lazy"])(()=>__turbopack_context__.r("[project]/node_modules/dash-video-element/dist/react.js [app-client] (ecmascript, async loader)")(__turbopack_context__.i))
+    },
+    {
+        key: "mux",
+        name: "Mux",
+        canPlay: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$player$2f$dist$2f$patterns$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["canPlay"].mux,
+        canEnablePIP: ()=>true,
+        player: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["lazy"])(()=>__turbopack_context__.r("[project]/node_modules/@mux/mux-player-react/dist/index.mjs [app-client] (ecmascript, async loader)")(__turbopack_context__.i))
+    },
+    {
+        key: "youtube",
+        name: "YouTube",
+        canPlay: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$player$2f$dist$2f$patterns$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["canPlay"].youtube,
+        player: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["lazy"])(()=>__turbopack_context__.r("[project]/node_modules/youtube-video-element/dist/react.js [app-client] (ecmascript, async loader)")(__turbopack_context__.i))
+    },
+    {
+        key: "vimeo",
+        name: "Vimeo",
+        canPlay: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$player$2f$dist$2f$patterns$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["canPlay"].vimeo,
+        player: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["lazy"])(()=>__turbopack_context__.r("[project]/node_modules/vimeo-video-element/dist/react.js [app-client] (ecmascript, async loader)")(__turbopack_context__.i))
+    },
+    {
+        key: "wistia",
+        name: "Wistia",
+        canPlay: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$player$2f$dist$2f$patterns$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["canPlay"].wistia,
+        canEnablePIP: ()=>true,
+        player: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["lazy"])(()=>__turbopack_context__.r("[project]/node_modules/wistia-video-element/dist/react.js [app-client] (ecmascript, async loader)")(__turbopack_context__.i))
+    },
+    {
+        key: "spotify",
+        name: "Spotify",
+        canPlay: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$player$2f$dist$2f$patterns$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["canPlay"].spotify,
+        canEnablePIP: ()=>false,
+        player: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["lazy"])(()=>__turbopack_context__.r("[project]/node_modules/spotify-audio-element/dist/react.js [app-client] (ecmascript, async loader)")(__turbopack_context__.i))
+    },
+    {
+        key: "twitch",
+        name: "Twitch",
+        canPlay: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$player$2f$dist$2f$patterns$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["canPlay"].twitch,
+        canEnablePIP: ()=>false,
+        player: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["lazy"])(()=>__turbopack_context__.r("[project]/node_modules/twitch-video-element/dist/react.js [app-client] (ecmascript, async loader)")(__turbopack_context__.i))
+    },
+    {
+        key: "tiktok",
+        name: "TikTok",
+        canPlay: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$player$2f$dist$2f$patterns$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["canPlay"].tiktok,
+        canEnablePIP: ()=>false,
+        player: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["lazy"])(()=>__turbopack_context__.r("[project]/node_modules/tiktok-video-element/dist/react.js [app-client] (ecmascript, async loader)")(__turbopack_context__.i))
+    },
+    {
+        key: "html",
+        name: "html",
+        canPlay: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$player$2f$dist$2f$patterns$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["canPlay"].html,
+        canEnablePIP: ()=>true,
+        player: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$player$2f$dist$2f$HtmlPlayer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
+    }
+];
+var players_default = Players;
+;
+}),
+"[project]/node_modules/react-player/dist/props.js [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s({
+    "defaultProps": ()=>defaultProps
+});
+const defaultProps = {
+    // Falsy values don't need to be defined
+    //
+    // native video attrs
+    // src: undefined,
+    // preload: undefined,
+    // crossOrigin: undefined,
+    // autoPlay: false,
+    // muted: false,
+    // loop: false,
+    // controls: false,
+    // playsInline: false,
+    width: "320px",
+    height: "180px",
+    // native video props
+    volume: 1,
+    playbackRate: 1,
+    // custom props
+    // playing: undefined,
+    // pip: false,
+    // light: false,
+    // fallback: null,
+    previewTabIndex: 0,
+    previewAriaLabel: "",
+    oEmbedUrl: "https://noembed.com/embed?url={url}"
+};
+;
+}),
+"[project]/node_modules/react-player/dist/Player.js [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s({
+    "default": ()=>Player_default
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+;
+const Player = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].forwardRef((props, ref)=>{
+    const { playing, pip } = props;
+    const Player2 = props.activePlayer;
+    const playerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const startOnPlayRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(true);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Player.useEffect": ()=>{
+            var _a, _b;
+            if (!playerRef.current) return;
+            if (playerRef.current.paused && playing === true) {
+                playerRef.current.play();
+            }
+            if (!playerRef.current.paused && playing === false) {
+                playerRef.current.pause();
+            }
+            playerRef.current.playbackRate = (_a = props.playbackRate) != null ? _a : 1;
+            playerRef.current.volume = (_b = props.volume) != null ? _b : 1;
+        }
+    }["Player.useEffect"]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Player.useEffect": ()=>{
+            var _a, _b, _c, _d, _e;
+            if (!playerRef.current || !globalThis.document) return;
+            if (pip && !document.pictureInPictureElement) {
+                try {
+                    (_b = (_a = playerRef.current).requestPictureInPicture) == null ? void 0 : _b.call(_a);
+                } catch (err) {}
+            }
+            if (!pip && document.pictureInPictureElement) {
+                try {
+                    (_d = (_c = playerRef.current).exitPictureInPicture) == null ? void 0 : _d.call(_c);
+                    (_e = document.exitPictureInPicture) == null ? void 0 : _e.call(document);
+                } catch (err) {}
+            }
+        }
+    }["Player.useEffect"], [
+        pip
+    ]);
+    const handleLoadStart = (event)=>{
+        var _a, _b;
+        startOnPlayRef.current = true;
+        (_a = props.onReady) == null ? void 0 : _a.call(props);
+        (_b = props.onLoadStart) == null ? void 0 : _b.call(props, event);
+    };
+    const handlePlay = (event)=>{
+        var _a, _b;
+        if (startOnPlayRef.current) {
+            startOnPlayRef.current = false;
+            (_a = props.onStart) == null ? void 0 : _a.call(props, event);
+        }
+        (_b = props.onPlay) == null ? void 0 : _b.call(props, event);
+    };
+    if (!Player2) {
+        return null;
+    }
+    const eventProps = {};
+    for(const key in props){
+        if (key.startsWith("on")) {
+            eventProps[key] = props[key];
+        }
+    }
+    return /* @__PURE__ */ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].createElement(Player2, {
+        ...eventProps,
+        style: props.style,
+        className: props.className,
+        slot: props.slot,
+        ref: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+            "Player.useCallback": (node)=>{
+                playerRef.current = node;
+                if (typeof ref === "function") {
+                    ref(node);
+                } else if (ref !== null) {
+                    ref.current = node;
+                }
+            }
+        }["Player.useCallback"], [
+            ref
+        ]),
+        src: props.src,
+        crossOrigin: props.crossOrigin,
+        preload: props.preload,
+        controls: props.controls,
+        muted: props.muted,
+        autoPlay: props.autoPlay,
+        loop: props.loop,
+        playsInline: props.playsInline,
+        config: props.config,
+        onLoadStart: handleLoadStart,
+        onPlay: handlePlay
+    }, props.children);
+});
+Player.displayName = "Player";
+var Player_default = Player;
+;
+}),
+"[project]/node_modules/react-player/dist/ReactPlayer.js [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s({
+    "createReactPlayer": ()=>createReactPlayer
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$player$2f$dist$2f$props$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-player/dist/props.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$player$2f$dist$2f$Player$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-player/dist/Player.js [app-client] (ecmascript)");
+;
+;
+;
+const Preview = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["lazy"])(()=>__turbopack_context__.r("[project]/node_modules/react-player/dist/Preview.js [app-client] (ecmascript, async loader)")(__turbopack_context__.i));
+const customPlayers = [];
+const createReactPlayer = (players, playerFallback)=>{
+    const getActivePlayer = (src)=>{
+        for (const player of [
+            ...customPlayers,
+            ...players
+        ]){
+            if (src && player.canPlay(src)) {
+                return player;
+            }
+        }
+        if (playerFallback) {
+            return playerFallback;
+        }
+        return null;
+    };
+    const ReactPlayer = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].forwardRef((_props, ref)=>{
+        const props = {
+            ...__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$player$2f$dist$2f$props$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["defaultProps"],
+            ..._props
+        };
+        const { src, slot, className, style, width, height, fallback, wrapper } = props;
+        const [showPreview, setShowPreview] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(!!props.light);
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+            "createReactPlayer.ReactPlayer.useEffect": ()=>{
+                if (props.light) {
+                    setShowPreview(true);
+                } else {
+                    setShowPreview(false);
+                }
+            }
+        }["createReactPlayer.ReactPlayer.useEffect"], [
+            props.light
+        ]);
+        const handleClickPreview = (e)=>{
+            var _a;
+            setShowPreview(false);
+            (_a = props.onClickPreview) == null ? void 0 : _a.call(props, e);
+        };
+        const renderPreview = (src2)=>{
+            if (!src2) return null;
+            const { light, playIcon, previewTabIndex, oEmbedUrl, previewAriaLabel } = props;
+            return /* @__PURE__ */ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].createElement(Preview, {
+                src: src2,
+                light,
+                playIcon,
+                previewTabIndex,
+                previewAriaLabel,
+                oEmbedUrl,
+                onClickPreview: handleClickPreview
+            });
+        };
+        const renderActivePlayer = (src2)=>{
+            var _a, _b;
+            const player = getActivePlayer(src2);
+            if (!player) return null;
+            const { style: style2, width: width2, height: height2, wrapper: wrapper2 } = props;
+            const config = (_a = props.config) == null ? void 0 : _a[player.key];
+            return /* @__PURE__ */ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].createElement(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$player$2f$dist$2f$Player$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                ...props,
+                ref,
+                activePlayer: (_b = player.player) != null ? _b : player,
+                slot: wrapper2 ? void 0 : slot,
+                className: wrapper2 ? void 0 : className,
+                style: wrapper2 ? {
+                    display: "block",
+                    width: "100%",
+                    height: "100%"
+                } : {
+                    display: "block",
+                    width: width2,
+                    height: height2,
+                    ...style2
+                },
+                config
+            });
+        };
+        const Wrapper = wrapper == null ? ForwardChildren : wrapper;
+        const UniversalSuspense = fallback === false ? ForwardChildren : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Suspense"];
+        return /* @__PURE__ */ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].createElement(Wrapper, {
+            slot,
+            className,
+            style: {
+                width,
+                height,
+                ...style
+            }
+        }, /* @__PURE__ */ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].createElement(UniversalSuspense, {
+            fallback
+        }, showPreview ? renderPreview(src) : renderActivePlayer(src)));
+    });
+    ReactPlayer.displayName = "ReactPlayer";
+    ReactPlayer.addCustomPlayer = (player)=>{
+        customPlayers.push(player);
+    };
+    ReactPlayer.removeCustomPlayers = ()=>{
+        customPlayers.length = 0;
+    };
+    ReactPlayer.canPlay = (src)=>{
+        if (src) {
+            for (const Player2 of [
+                ...customPlayers,
+                ...players
+            ]){
+                if (Player2.canPlay(src)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    };
+    ReactPlayer.canEnablePIP = (src)=>{
+        var _a;
+        if (src) {
+            for (const Player2 of [
+                ...customPlayers,
+                ...players
+            ]){
+                if (Player2.canPlay(src) && ((_a = Player2.canEnablePIP) == null ? void 0 : _a.call(Player2))) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    };
+    return ReactPlayer;
+};
+const ForwardChildren = (param)=>{
+    let { children } = param;
+    return children;
+};
+;
+}),
+"[project]/node_modules/react-player/dist/index.js [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s({
+    "default": ()=>src_default
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$player$2f$dist$2f$players$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-player/dist/players.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$player$2f$dist$2f$ReactPlayer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-player/dist/ReactPlayer.js [app-client] (ecmascript)");
+"use client";
+;
+;
+const fallback = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$player$2f$dist$2f$players$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"][__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$player$2f$dist$2f$players$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].length - 1];
+var src_default = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$player$2f$dist$2f$ReactPlayer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createReactPlayer"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$player$2f$dist$2f$players$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], fallback);
+;
+}),
+}]);
+
+//# sourceMappingURL=_5cac5b19._.js.map
