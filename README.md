@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI-Powered Movie Recommendation Platform
 
-## Getting Started
+## Overview
+This project is a **Full-Stack Movie Recommendation Web Application** that integrates **TMDB API** for movie data and an **AI-based recommendation system** to suggest trending, top-rated, and personalized movies. It features a **Movie of the Day** section that fetches a high-rated movie daily and stores it in **MongoDB** for persistence.
 
-First, run the development server:
+---
 
+## Key Features
+- **Browse Popular & Top-Rated Movies** – powered by TMDB API.
+- **Movie Details Page** – includes posters, trailers, cast, crew, and OTT streaming links.
+- **AI-Powered Recommendations** – suggests movies based on ratings and trends.
+- **Movie of the Day** – displays one high-rated movie daily (stored in MongoDB).
+- **Favorites & Watch Later List** – users can save and track movies.
+- **Responsive Design** – built with Next.js & Tailwind CSS.
+
+---
+
+## Tech Stack
+- **Frontend:** Next.js, React, Tailwind CSS  
+- **Backend:** Next.js API Routes (Flask for AI integration - optional)  
+- **Database:** MongoDB (Atlas)  
+- **External API:** TMDB API  
+
+---
+
+## Project Setup
+
+### 1. Clone Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone https://github.com/yourusername/movie-recommendation-platform.git
+cd movie-recommendation-platform
