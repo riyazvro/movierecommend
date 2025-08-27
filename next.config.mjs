@@ -13,11 +13,11 @@ const nextConfig = {
   },
   experimental: {
     optimizePackageImports: ['lucide-react'],
-    lightningCss: false, // Added to fix Vercel build error
+   
   },
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
-    lightningcss: false,
+    
   },
   async headers() {
     return [
